@@ -1,3 +1,3 @@
-let gretting = message => alert(`${message} Cantik!`);
+let gretting = (message) => alert(`${message} Cantik!`);
 
-gretting('Selamat Pagi')
+gretting("Selamat Pagi");
