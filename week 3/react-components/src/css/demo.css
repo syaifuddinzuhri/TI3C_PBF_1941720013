@@ -1,0 +1,41 @@
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+div.header {
+  width: 100%;
+  background-color: bisque;
+  font-weight: bold;
+  padding: 5% 2%;
+}
+
+div.footer {
+  width: 100%;
+  background-color: cornflowerblue;
+  padding: 5% 2%;
+}
+
+div.body {
+  width: 100%;
+  background-color: ghostwhite;
+  padding: 5% 2%;
+}
+
+ol {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #2196f3;
+}
+
+ol > li {
+  padding: 20px;
+  color: aliceblue;
+}
+
+ol > li img {
+  margin-top: 10px;
+}
