@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 // import HelloComponent from './components/HelloComponent';
-// import './index.css';
+import './index.css';
+// import './css/demo.css';
 // import App from './App';
 // import Test from './components/Test';
 import './css/login.css'
@@ -24,6 +25,20 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('root')
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <HelloComponent />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <StateFullComponent />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );
 
 // ReactDOM.render(
 //   <React.StrictMode>
