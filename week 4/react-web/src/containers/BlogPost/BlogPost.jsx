@@ -86,7 +86,7 @@ class BlogPost extends Component {
           </div>
           <div className="form-group row">
             <label htmlFor="title" className="col-sm-2 col-form-label">
-              Judul
+              Body
             </label>
             <div className="col-sm-10">
               <textarea

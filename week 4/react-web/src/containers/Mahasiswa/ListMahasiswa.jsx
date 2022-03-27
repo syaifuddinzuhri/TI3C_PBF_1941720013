@@ -175,7 +175,13 @@ class ListMahasiswa extends Component {
             <h1>List Mahasiswa</h1>
             <ul className="list-group">
               {this.state.listMahasiswa.map((mahasiswa) => {
-                return <Mahasiswa key={mahasiswa.nim} data={mahasiswa} hapus={this.handleHapusMahasiswa}/>;
+                return (
+                  <Mahasiswa
+                    key={mahasiswa.nim}
+                    data={mahasiswa}
+                    hapus={this.handleHapusMahasiswa}
+                  />
+                );
               })}
             </ul>
           </div>
