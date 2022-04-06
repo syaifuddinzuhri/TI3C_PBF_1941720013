@@ -89,6 +89,15 @@
       "product_price": "80000",
       "total": 160000,
       "qty": "2"
+    },
+    {
+      "id": 1648631208856,
+      "product_id": 1,
+      "product_name": "Product 1",
+      "product_img": "https://placeimg.com/400/400/tech",
+      "product_price": "100000",
+      "total": 100000,
+      "qty": 1
     }
   ],
   "transactions": [
