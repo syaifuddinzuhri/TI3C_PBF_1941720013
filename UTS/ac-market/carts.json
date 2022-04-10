@@ -1,0 +1,14 @@
+{
+  "carts": [
+    {
+      "id": 1649603194294,
+      "product_id": 1,
+      "product_name": "Vita Cool Air Conditioner 5,000 BTU",
+      "product_img": "ac1.webp",
+      "product_price": "100000",
+      "product_stock": 145,
+      "total": 100000,
+      "qty": 1
+    }
+  ]
+}
