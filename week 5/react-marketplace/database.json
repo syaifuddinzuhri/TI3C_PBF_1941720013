@@ -80,26 +80,7 @@
       "stock": "3"
     }
   ],
-  "carts": [
-    {
-      "id": 1648629853470,
-      "product_id": 5,
-      "product_name": "Product 5",
-      "product_img": "https://placeimg.com/400/400/arch",
-      "product_price": "80000",
-      "total": 160000,
-      "qty": "2"
-    },
-    {
-      "id": 1648631208856,
-      "product_id": 1,
-      "product_name": "Product 1",
-      "product_img": "https://placeimg.com/400/400/tech",
-      "product_price": "100000",
-      "total": 100000,
-      "qty": 1
-    }
-  ],
+  "carts": [],
   "transactions": [
     {
       "id": 1648625528909,
@@ -148,6 +129,22 @@
       "product_price": "75000",
       "qty": 1,
       "total": 75000
+    },
+    {
+      "id": 1649297917579,
+      "product_name": "Product 1",
+      "product_img": "https://placeimg.com/400/400/tech",
+      "product_price": "100000",
+      "qty": "123",
+      "total": 12300000
+    },
+    {
+      "id": 1649297938209,
+      "product_name": "Product 1",
+      "product_img": "https://placeimg.com/400/400/tech",
+      "product_price": "100000",
+      "qty": 1,
+      "total": 100000
     }
   ]
 }
