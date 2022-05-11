@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./BlogPost.css";
 import Post from "../../components/BlogPost/Post";
+import API from "../../services";
 
 class BlogPost extends Component {
   state = {
@@ -14,13 +15,18 @@ class BlogPost extends Component {
   };
 
   ambilDataDariServerAPI = () => {
-    fetch("http://localhost:3001/posts?_sort=id&_order=desc")
-      .then((res) => res.json())
-      .then((json) => {
-        this.setState({
-          listArtikel: json,
-        });
+    API.getNewsBlog().then((result) => {
+      this.setState({
+        listArtikel: result,
       });
+    });
+    // fetch("http://localhost:3001/posts?_sort=id&_order=desc")
+    //   .then((res) => res.json())
+    //   .then((json) => {
+    //     this.setState({
+    //       listArtikel: json,
+    //     });
+    //   });
   };
 
   componentDidMount() {
@@ -28,9 +34,13 @@ class BlogPost extends Component {
   }
 
   handleHapusArtikel = (data) => {
-    fetch(`http://localhost:3001/posts/${data}`, { method: "DELETE" }).then(
-      (res) => this.ambilDataDariServerAPI()
-    );
+    API.deleteNewsBlog(data).then((response) => {
+      this.ambilDataDariServerAPI();
+    });
+
+    // fetch(`http://localhost:3001/posts/${data}`, { method: "DELETE" }).then(
+    //   (res) => this.ambilDataDariServerAPI()
+    // );
   };
 
   handleTambahArtikel = (event) => {
@@ -45,16 +55,22 @@ class BlogPost extends Component {
 
   handleTombolSimpan = (e) => {
     e.preventDefault();
-    fetch("http://localhost:3001/posts", {
-      method: "post",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(this.state.insertArtikel),
-    }).then((response) => {
+
+    // fetch("http://localhost:3001/posts", {
+    //   method: "post",
+    //   headers: {
+    //     Accept: "application/json",
+    //     "Content-Type": "application/json",
+    //   },
+    //   body: JSON.stringify(this.state.insertArtikel),
+    // }).then((response) => {
+    //   this.ambilDataDariServerAPI();
+    // });
+
+    API.postNewsBlog(this.state.insertArtikel).then((response) => {
       this.ambilDataDariServerAPI();
     });
+
     this.setState({
       insertArtikel: {
         userId: 1,

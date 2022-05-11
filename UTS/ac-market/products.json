@@ -6,7 +6,7 @@
       "name": "Vita Cool Air Conditioner 5,000 BTU",
       "description": "ESM05CRR-C1, Breathe fresher air with I-Clean, Enjoy healthier home with X-Fan",
       "price": "100000",
-      "stock": 145
+      "stock": 141
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "name": "Vita Cool Air Conditioner 12,000 BTU",
       "description": "ESM12CRR-C1, Breathe fresher air with I-Clean, Enjoy healthier home with X-Fan",
       "price": "75000",
-      "stock": 13
+      "stock": 12
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "name": "Vita Cool Air Conditioner 18,000 BTU",
       "description": "ESM18CRR-C1, Breathe fresher air with I-Clean, Enjoy healthier home with X-Fan",
       "price": "45000",
-      "stock": "300"
+      "stock": 500
     },
     {
       "id": 4,
