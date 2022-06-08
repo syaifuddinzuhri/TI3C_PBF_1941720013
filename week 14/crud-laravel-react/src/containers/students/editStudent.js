@@ -10,7 +10,7 @@ class EditStudent extends Component {
           onHide={this.props.toggleEditStudentModal}
         >
           <Modal.Header closeButton>
-            <Modal.Title>Add Student</Modal.Title>
+            <Modal.Title>Edit Student</Modal.Title>
           </Modal.Header>
           <Modal.Body>
             <Form.Group className="mb-3">
